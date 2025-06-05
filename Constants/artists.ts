@@ -76,5 +76,19 @@ export const topArtists: TopArtist[] = [
         alt: "Tyler",
         name: "Tyler, The Creator",
         url: "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF?si=f35e378d548743d1"
+    },
+    {
+        id: "top-artist-11",
+        src: "/images/assets/uche-yara.jpeg",
+        alt: "Uche Yara",
+        name: "Uche Yara",
+        url: "https://open.spotify.com/artist/2yOJnAGg41NV4aech301xj?si=HI-VGJHvSXqnNLjsTXV4cg"
+    },
+    {
+        id: "top-artist-12",
+        src: "/images/assets/braye.png",
+        alt: "Braye",
+        name: "Braye",
+        url: "https://open.spotify.com/artist/7wGQ0lfuBST1l3WyiJGVY0?si=lFlnv8KFRiaJNy0hbjGo4A"
     }
 ]
