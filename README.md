@@ -24,7 +24,7 @@
 
 ## 📸 Preview
 
-![Macintosh OS Screenshot](./snapshot.png)
+[![Macintosh OS Screenshot](./snapshot.png)](https://macintosh-os.vercel.app)
 
 ---
 
