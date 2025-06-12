@@ -13,7 +13,7 @@ const righteous = Righteous({
 
 export default function Spotify() {
     return (
-        <div className="grid gap-2 bg-gradient-to-b from-[rgba(248,216,160)]/10 via-[rgba(248,216,160)]/5 to-background">
+        <div className="grid gap-2">
             <div className="bg-[rgb(248,216,160)] p-4 relative flex items-center gap-3">
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.5)]"></div>
                 <Image

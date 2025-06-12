@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Projects() {
     return (
-        <div className="grid gap-4">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-4">
             {projects.map((project) => (
                 <Link href={project.url} target="_blank" rel="noopener noreferrer" key={project.id} className="grid place-items-center w-full aspect-video group bg-background/60 rounded-2xl overflow-hidden relative active:opacity-75 active:scale-[0.97] transition-all duration-300 select-none border border-foreground/20 shadow-[0px_5px_25px_rgba(0,0,0,0.15)]">
                     <Image
