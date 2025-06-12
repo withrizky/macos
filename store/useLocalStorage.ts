@@ -50,8 +50,7 @@ export function useLocalStorage<T>(
 
     const deleteValue = () => {
         if (typeof window !== 'undefined') {
-            console.log(key);
-            console.log("deleted", window.localStorage.removeItem(key));
+            window.localStorage.removeItem(key);
         }
     };
 

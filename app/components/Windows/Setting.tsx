@@ -7,7 +7,7 @@ import { useLocalStorage } from "@/store/useLocalStorage";
 export default function Setting() {
     const { setTheme, theme, setAllowCookies, allowCookies, setTimeFormat, timeFormat, setLiquidGlassCursor, liquidGlassCursor } = useAppStore();
 
-    const [_storedAppSettings, setStoredAppSettings, deleteStoredAppSettings] = useLocalStorage("app-settings", {
+    const [_storedAppSettings, _setStoredAppSettings, deleteStoredAppSettings] = useLocalStorage("app-settings", {
         theme: "dark",
         timeFormat: "24",
         allowCookies: false,
