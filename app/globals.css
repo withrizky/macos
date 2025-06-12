@@ -134,6 +134,11 @@ body {
   fill: #fff;
 }
 
+.with-lg {
+  filter: url(#lg-dist) saturate(150%);
+  isolation: isolate;
+}
+
 .toggle-icon.off {
   fill: #eaeaec;
 }

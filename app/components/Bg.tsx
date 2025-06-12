@@ -33,7 +33,7 @@ export default function Bg({ }: BgProps) {
                     e.preventDefault();
                 }}
                 placeholder="blur"
-                blurDataURL="/images/assets/70838932.jpeg"
+                blurDataURL="/images/macos-monterey.jpg"
                 draggable={false}
                 priority
                 className={clsx(

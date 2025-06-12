@@ -19,9 +19,10 @@ interface AppWindowsStore {
     minimizeWindow: (id: string, position: { x: number; y: number }) => void;
     restoreWindow: (id: string) => void;
     reorderToTop: (id: string) => void;
+    getTopWindowId: () => string;
 }
 
-const useAppWindows = create<AppWindowsStore>((set) => ({
+const useAppWindows = create<AppWindowsStore>((set, get) => ({
     windows: [],
     addWindow: (window) => set((state) => ({ windows: [...state.windows, window] })),
     removeWindow: (id) => set((state) => ({ windows: state.windows.filter((window) => window.id !== id) })),
@@ -46,6 +47,9 @@ const useAppWindows = create<AppWindowsStore>((set) => ({
             window.id === id ? { ...window, isMinimized: false } : window
         ),
     })),
+    getTopWindowId: () => {
+        return get().windows.length > 0 ? get().windows[get().windows.length - 1].id : '';
+    }
 }))
 
 export default useAppWindows;

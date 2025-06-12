@@ -26,6 +26,7 @@ import { CSS } from "@dnd-kit/utilities";
 import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import useSoundEffect from "@useverse/usesoundeffect";
+import clsx from "clsx";
 
 // Create a sortable version of your Icon component
 const SortableIcon = ({ id, ...props }: IconProps & { id: string }) => {
@@ -93,7 +94,7 @@ export default function TaskBar() {
     const handleDragEnd = (event: DragEndEvent) => {
         const { active, over } = event;
         setActiveId(null);
-        
+
         if (over && active.id !== over.id) {
             swipeSound.play();
             setTaskbarIcons((items) => {
@@ -127,42 +128,48 @@ export default function TaskBar() {
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, type: "spring", stiffness: 100, damping: 10, delay: 0.5 }}
-            className="fixed bottom-2 p-2 left-1/2 z-[999] -translate-x-1/2 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-sm">
-            <div className="flex items-stretch gap-2">
-                <DndContext
-                    sensors={sensors}
-                    collisionDetection={closestCenter}
-                    onDragStart={handleDragStart}
-                    onDragEnd={handleDragEnd}
-                >
-                    <SortableContext
-                        items={taskbarIcons.map((icon) => icon.id)}
-                        strategy={horizontalListSortingStrategy}
+            className={"fixed bottom-2 overflow-hidden left-1/2 z-[999] -translate-x-1/2 rounded-3xl border border-white/10 bg-white/10"}
+        >
+            <div 
+                className={clsx("p-2 relative")}
+            >
+                <div className="absolute top-0 left-0 w-full h-full with-lg backdrop-blur-[4px]"></div>
+                <div className="flex items-stretch gap-2">
+                    <DndContext
+                        sensors={sensors}
+                        collisionDetection={closestCenter}
+                        onDragStart={handleDragStart}
+                        onDragEnd={handleDragEnd}
                     >
-                        <div className="flex items-center gap-1">
-                            {taskbarIcons.map((icon) => (
-                                <SortableIcon key={icon.id} {...icon} />
-                            ))}
-                        </div>
-                    </SortableContext>
-                    {typeof window !== 'undefined' && createPortal(
-                        <DragOverlay dropAnimation={dropAnimation}>
-                            {activeId && activeIcon ? (
-                                <div className="opacity-95 scale-105">
-                                    <Icon {...activeIcon} />
-                                </div>
-                            ) : null}
-                        </DragOverlay>,
-                        document.body
-                    )}
-                </DndContext>
-                <div
-                    className="w-[1px] mx-2 bg-white/20"
-                />
-                <div className="flex items-center gap-2">
-                    {permanentIcons.map((icon) => (
-                        <Icon key={icon.id} {...icon} />
-                    ))}
+                        <SortableContext
+                            items={taskbarIcons.map((icon) => icon.id)}
+                            strategy={horizontalListSortingStrategy}
+                        >
+                            <div className="flex items-center gap-1">
+                                {taskbarIcons.map((icon) => (
+                                    <SortableIcon key={icon.id} {...icon} />
+                                ))}
+                            </div>
+                        </SortableContext>
+                        {typeof window !== 'undefined' && createPortal(
+                            <DragOverlay dropAnimation={dropAnimation}>
+                                {activeId && activeIcon ? (
+                                    <div className="opacity-95 scale-105">
+                                        <Icon {...activeIcon} />
+                                    </div>
+                                ) : null}
+                            </DragOverlay>,
+                            document.body
+                        )}
+                    </DndContext>
+                    <div
+                        className="w-[1px] mx-2 bg-white/20"
+                    />
+                    <div className="flex items-center gap-2">
+                        {permanentIcons.map((icon) => (
+                            <Icon key={icon.id} {...icon} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </motion.div>
