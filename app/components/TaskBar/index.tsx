@@ -128,7 +128,7 @@ export default function TaskBar() {
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.25, type: "spring", stiffness: 100, damping: 10, delay: 0.5 }}
-            className={"fixed bottom-2 overflow-hidden left-1/2 z-[999] -translate-x-1/2 rounded-3xl border border-white/10 bg-white/10"}
+            className={"fixed bottom-2 left-1/2 z-[999] -translate-x-1/2 rounded-3xl border border-white/10 bg-white/10"}
         >
             <div 
                 className={clsx("p-2 relative")}
