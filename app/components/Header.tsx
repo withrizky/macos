@@ -2,11 +2,12 @@
 
 import useAppStore from "@/store";
 import clsx from "clsx";
-import { LucideMail } from "lucide-react";
+import { LucideMail, WifiOff, Wifi, WifiLow } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import useSoundEffect from "@useverse/usesoundeffect";
+import { useOnlineStatus } from "@/util/Hooks/useOnlineStatus";
 
 
 export default function Header() {
@@ -18,6 +19,7 @@ export default function Header() {
     });
 
     const { timeFormat } = useAppStore();
+    const { connectionStatus, isChecking, refresh } = useOnlineStatus();
 
     const [time, setTime] = useState(() => {
         if (timeFormat === "12") {
@@ -99,6 +101,23 @@ export default function Header() {
                             </p>
                         </Link>
                         <div className="flex items-center gap-2">
+                            <div 
+                                className={clsx(
+                                    "flex items-center gap-1 cursor-pointer group",
+                                    isChecking ? "animate-pulse" : "animate-none"
+                                )}
+                                onClick={refresh}
+                                title={`Connection: ${connectionStatus}${isChecking ? ' (checking...)' : ''} - Click to refresh`}
+                            >
+                                {connectionStatus === 'online' ? (
+                                    <Wifi size={14} className="text-foreground/70 group-hover:text-foreground" />
+                                ) : connectionStatus === 'slow' ? (
+                                    <WifiLow size={14} className="text-foreground/70 group-hover:text-foreground" />
+                                ) : (
+                                    <WifiOff size={14} className="text-foreground/70 group-hover:text-foreground" />
+                                )}
+                            </div>
+                            <div className="w-[1px] h-4 bg-foreground/30"></div>
                             <p className="font-medium text-sm">{new Date().toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'long' })}</p>
                             <div className="w-[1px] h-4 bg-foreground/30"></div>
                             <p className="font-medium text-sm">{time}</p>

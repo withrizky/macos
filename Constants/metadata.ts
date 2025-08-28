@@ -16,7 +16,19 @@ export const metadata = {
       "Web3",
       "Cold Hubs",
       "Mono API",
-      "Nigerian Developer"
+      "Nigerian Developer",
+      "Macintosh OS",
+      "Classic Mac",
+      "Mac OS",
+      "Operating System",
+      "Retro Computing",
+      "Progressive Web App",
+      "PWA",
+      "Browser OS",
+      "Desktop Experience",
+      "Vintage Mac",
+      "System 7",
+      "Classic Computing"
     ],
     authors: [{ name: "Favour Tochukwu Ajokubi", url: "https://fabiconcept.online" }],
     creator: "Favour Tochukwu Ajokubi",
@@ -30,10 +42,16 @@ export const metadata = {
           url: '/favicons/favicon.ico',
       },
   },
+    manifest: "/manifest.json",
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default" as const,
+      title: "Favour Ajokubi Portfolio | Macintosh OS",
+    },
     openGraph: {
       title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
       description: "Crafting seamless digital experiences across frontend, backend, and Web3. Explore projects, contributions, and more.",
-      url: "https://your-portfolio-link.com",
+      url: "https://macintosh.fabiconcept.online/",
       siteName: "Favour Ajokubi Portfolio",
       images: [
         {
@@ -53,5 +71,5 @@ export const metadata = {
       creator: "@goat_h2o", 
       images: ["https://pickholder.sirv.com/Images/og-image.png"] 
     },
-    metadataBase: new URL("https://your-portfolio-link.com")
+    metadataBase: new URL("https://macintosh.fabiconcept.online/")
   };
