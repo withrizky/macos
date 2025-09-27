@@ -13,7 +13,6 @@ export enum WindowType {
     Bin = "bin",
     Photos = "photos",
     Test = "test",
-    BezierClipPath = "bezierclippath"
 }
 
 export interface IconProps {
@@ -74,13 +73,6 @@ export const icons: IconProps[] = [
         tooltip: "Spotify",
         windowType: WindowType.Spotify,
     },
-    {
-        id: "icon-8",
-        src: "/images/icons/draw.png",
-        alt: "Bézier Clip Path",
-        tooltip: "Bézier",
-        windowType: WindowType.BezierClipPath,
-    }
 ]
 
 export const permanentIcons: IconProps[] = [
