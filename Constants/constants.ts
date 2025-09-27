@@ -357,5 +357,12 @@ export const launchpadApps: LaunchpadApp[] = [
         alt: "Safari",
         title: "Safari",
         url: "https://fabiconcept.online/",
-    }
+    },
+    {
+        id: "launchpad-app-bezier",
+        src: "/images/icons/bezier.png",
+        alt: "Bézier",
+        title: "Bézier",
+        url: "/playground",
+    },
 ]
