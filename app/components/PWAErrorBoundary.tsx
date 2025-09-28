@@ -45,7 +45,7 @@ export class PWAErrorBoundary extends Component<Props, State> {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ 
               duration: 0.5,
-              type: "spring", 
+              type: "spring" as const, 
               stiffness: 300, 
               damping: 25,
               ease: [0.25, 0.46, 0.45, 0.94]
