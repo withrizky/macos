@@ -30,7 +30,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       </head>
-      <AppThemeProvider className={`${poppins.variable} antialiased`}>
+      <AppThemeProvider className={`${poppins.variable} antialiased select-none`}>
         <PWAErrorBoundary>
           <svg style={{ display: "none" }}>
 
