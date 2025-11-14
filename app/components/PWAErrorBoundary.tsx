@@ -125,7 +125,7 @@ export class PWAErrorBoundary extends Component<Props, State> {
                   </button>
 
                   {/* Secondary action */}
-                  <Link href="https://fabiconcept.online" className="block">
+                  <Link href="https://withrizky.github.io/officialweb/" className="block">
                     <button className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 bg-slate-100/50 dark:bg-slate-700/50 hover:bg-slate-200/50 dark:hover:bg-slate-600/50 active:bg-slate-300/50 dark:active:bg-slate-500/50 rounded-2xl transition-all duration-200 backdrop-blur-xl border border-slate-200/50 dark:border-slate-600/50 transform hover:scale-[1.02] active:scale-[0.98]">
                       <Home size={16} />
                       Go Home

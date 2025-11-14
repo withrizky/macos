@@ -101,7 +101,7 @@ export default function Mail() {
                         "flex items-center gap-1 rounded cursor-pointer py-0.5 px-1",
                         theme === "dark"? "bg-blue-50/20" : "bg-blue-300/40"
                     )}>
-                    fabiconceptdev@gmail.com <LucideChevronDown size={15} />
+                    withrizky.official@gmail.com <LucideChevronDown size={15} />
                 </span>
             </div>
             

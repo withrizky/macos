@@ -28,7 +28,7 @@ export default function MobileViewNotice() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, type: "spring", stiffness: 100, damping: 10, delay: 0.25 }}
             >
-                <Link href="https://fabiconcept.online" target="_self" rel="noopener noreferrer" className="m-5 h-10 w-10 rounded-full grid place-items-center shadow-[0px_0px_5px] shadow-foreground/25 text-white bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700">
+                <Link href="https://withrizky.github.io/officialweb/" target="_self" rel="noopener noreferrer" className="m-5 h-10 w-10 rounded-full grid place-items-center shadow-[0px_0px_5px] shadow-foreground/25 text-white bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700">
                     <span className="drop-shadow-md inset-shadow text-sm font-semibold">FA</span>
                 </Link>
             </motion.div>
@@ -74,7 +74,7 @@ export default function MobileViewNotice() {
 
             <motion.div className="px-5">
                 <Link
-                    href="https://fabiconcept.online"
+                    href="https://withrizky.github.io/officialweb/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 p-2 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl w-full flex items-center group shadow-[0px_5px_25px] shadow-foreground/10 hover:shadow-foreground/15 transition-all duration-300 active:scale-95 active:opacity-75"
@@ -82,7 +82,7 @@ export default function MobileViewNotice() {
                     <div className="flex items-center gap-2">
                         <Image
                             src="/images/assets/70838932.jpeg"
-                            alt="fabiconcept"
+                            alt="rizky"
                             width={50}
                             height={50}
                             onContextMenu={(e) => {
@@ -97,7 +97,7 @@ export default function MobileViewNotice() {
                             priority
                             className="rounded-full"
                         />
-                        <span className="text-white">fabiconcept.online</span>
+                        <span className="text-white">https://withrizky.github.io/officialweb/</span>
                     </div>
                     <div className="h-[1px] ml-2 flex-1 bg-white/10 group-hover:bg-white/25 transition-all duration-300"></div>
                     <div className="h-7 w-7 rounded-full grid place-items-center bg-white/10 group-hover:bg-white/25 transition-all duration-300 group-hover:-rotate-12 group-active:scale-95 group-active:rotate-12">
@@ -113,7 +113,7 @@ export default function MobileViewNotice() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.25, type: "spring", stiffness: 100, damping: 10, delay: 0.25 }}
                 className="text-sm text-foreground/50 p-5 text-center"
-            >© {new Date().getFullYear()} Favour Ajokubi. All rights reserved.</motion.p>
+            >© {new Date().getFullYear()} Rizky Reynaldi. All rights reserved.</motion.p>
         </div>
     )
 }

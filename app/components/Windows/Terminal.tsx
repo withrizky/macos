@@ -98,16 +98,16 @@ export default function Terminal() {
     // const setLines = (lines: string[]) => {...}; // Function to update terminal lines
 
     // Basic system commands
-    if (normalizedCmd === 'whoami') return 'Favour Tochukwu Ajokobi';
+    if (normalizedCmd === 'whoami') return 'Automation Developer • Backend Engineer • IT Consultant';
     if (normalizedCmd === 'date') return new Date().toString();
     if (normalizedCmd === 'pwd') return '/Users/favour';
     if (normalizedCmd === 'hostname') return 'MacBook-Pro.local';
-    if (normalizedCmd === 'uname') return 'Fabiconcept';
-    if (normalizedCmd === 'who') return `Favour Tochukwu Ajokobi  console  ${new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })}`;
+    if (normalizedCmd === 'uname') return 'Rizky';
+    if (normalizedCmd === 'who') return `Automation Developer • Backend Engineer • IT Consultant  console  ${new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false })}`;
 
     // Different variations of uname
-    if (normalizedCmd === 'uname -a') return 'Fabiconcept MacBook-Pro.local 23.4.0 Fabiconcept Kernel Version 23.4.0: ... x86_64';
-    if (normalizedCmd === 'uname -s') return 'Fabiconcept';
+    if (normalizedCmd === 'uname -a') return 'Rizky Reynaldi MacBook-Pro.local 23.4.0 Rizky Reynaldi Kernel Version 23.4.0: ... x86_64';
+    if (normalizedCmd === 'uname -s') return 'Rizky Reynaldi';
     if (normalizedCmd === 'uname -n') return 'MacBook-Pro.local';
     if (normalizedCmd === 'uname -r') return '23.4.0';
     if (normalizedCmd === 'uname -m') return 'x86_64';
@@ -345,7 +345,7 @@ export default function Terminal() {
           <span className={clsx(
             "select-none",
             theme === "dark" ? "text-green-400" : "text-green-700"
-          )}>macbook@Fabiconcepts-Machine ~ %</span> {line.command}
+          )}>macbook@Rizky-Machine ~ %</span> {line.command}
           {line.output && (
             <div className={clsx(
               "whitespace-pre-wrap",
@@ -360,7 +360,7 @@ export default function Terminal() {
         <span className={clsx(
             "select-none",
             theme === "dark" ? "text-green-400" : "text-green-700"
-        )}>macbook@Fabiconcepts-Machine ~ %</span>
+        )}>macbook@Rizky-Machine ~ %</span>
         <input
           autoFocus
           type="text"

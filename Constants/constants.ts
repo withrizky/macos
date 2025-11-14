@@ -288,81 +288,33 @@ export interface LaunchpadApp {
 }
 
 export const launchpadApps: LaunchpadApp[] = [
-    {
-        id: "launchpad-app-facebook",
-        src: "/images/icons/facebook.png",
-        alt: "Facebook",
-        title: "Facebook",
-        url: "https://www.facebook.com/fabiconcept",
-    },
+    
     {
         id: "launchpad-app-instagram",
         src: "/images/icons/instagram.png",
         alt: "Instagram",
         title: "Instagram",
-        url: "https://www.instagram.com/fabiconcept_ng",
-    },
-    {
-        id: "launchpad-app-threads",
-        src: "/images/icons/threads.png",
-        alt: "Threads",
-        title: "Threads",
-        url: "https://www.threads.com/@fabiconcept_ng",
-    },
-    {
-        id: "launchpad-app-x",
-        src: "/images/icons/x.png",
-        alt: "X",
-        title: "X",
-        url: "https://www.x.com/goat_h2o",
+        url: "https://www.instagram.com/rzkrynld_",
     },
     {
         id: "launchpad-app-whatsapp",
         src: "/images/icons/whatsapp.png",
         alt: "WhatsApp",
         title: "WhatsApp",
-        url: "https://wa.link/78bp13",
+        url: "https://wa.me/6285691408950",
     },
     {
         id: "launchpad-app-github",
         src: "/images/icons/github.png",
         alt: "GitHub",
         title: "GitHub",
-        url: "https://www.github.com/fabiconcept",
+        url: "https://www.github.com/withrizky",
     },
     {
         id: "launchpad-app-linkedin",
         src: "/images/icons/linkedin.png",
         alt: "LinkedIn",
         title: "LinkedIn",
-        url: "https://www.linkedin.com/in/fabiconcept/",
-    },
-    {
-        id: "launchpad-app-dribbble",
-        src: "/images/icons/dribble.png",
-        alt: "Dribbble",
-        title: "Dribbble",
-        url: "https://www.dribbble.com/fabiconcept",
-    },
-    {
-        id: "launchpad-app-room",
-        src: "/images/icons/secret.png",
-        alt: "Secret",
-        title: "Secret Room",
-        url: "https://secret-room-orpin.vercel.app/ginvite/global-98cd99b7-bd7b-4942-a6b0-c16feff7f39b",
-    },
-    {
-        id: "launchpad-app-safari",
-        src: "/images/icons/safari.png",
-        alt: "Safari",
-        title: "Safari",
-        url: "https://fabiconcept.online/",
-    },
-    {
-        id: "launchpad-app-bezier",
-        src: "/images/icons/bezier.png",
-        alt: "Bézier",
-        title: "Bézier",
-        url: "/playground",
-    },
+        url: "https://www.linkedin.com/in/rizkyreynaldi/",
+    }
 ]

@@ -9,23 +9,9 @@ export interface Trash {
 export const trash: Trash[] = [
     {
         id: "trash-1",
-        name: "My resume",
+        name: "CV Rizky Reynaldi",
         icon: "/images/icons/pdf.png",
         downloadable: true,
-        downloadURL: "https://pickholder.sirv.com/folder/Favour%20Ajokubi.docx.pdf"
-    },
-    {
-        id: "trash-2",
-        name: "Untitled 01",
-        icon: "https://pickholder.sirv.com/Images/Untitled50.png",
-        downloadable: true,
-        downloadURL: "https://pickholder.sirv.com/Images/Untitled50.png"
-    },
-    {
-        id: "trash-3",
-        name: "Untitled 02",
-        icon: "https://pickholder.sirv.com/Images/icon.jpg",
-        downloadable: true,
-        downloadURL: "https://pickholder.sirv.com/Images/CyberGhost.png"
+        downloadURL: "/images/assets/cv.pdf"
     }
 ]

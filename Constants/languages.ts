@@ -6,44 +6,44 @@ interface Language {
 
 export const languages: Language[] = [
     {
-        id: "javascript",
-        name: "JavaScript",
-        icon: "/images/technologies/javascript-svgrepo-com.svg",
-    },
-    {
-        id: "typescript",
-        name: "TypeScript",
-        icon: "/images/technologies/typescript-official-svgrepo-com.svg",
-    },  
-    {
         id: "php",
-        name: "PHP",
+        name: "PHP Native",
         icon: "/images/technologies/php2-svgrepo-com.svg",
     },
     {
-        id: "laravel",
-        name: "Laravel",
-        icon: "/images/technologies/laravel-svgrepo-com.svg",
+        id: "postman",
+        name: "Postman",
+        icon: "/images/technologies/postman-icon-svgrepo-com.svg",
+    },  
+    {
+        id: "androidstudio",
+        name: "Android Studio",
+        icon: "/images/technologies/android-svgrepo-com.svg",
     },
     {
-        id: "node",
-        name: "Node.js",
-        icon: "/images/technologies/node-svgrepo-com.svg",
+        id: "ubuntu",
+        name: "Ubuntu",
+        icon: "/images/technologies/ubuntu-svgrepo-com.svg",
     },
     {
-        id: "react",
-        name: "React",
-        icon: "/images/technologies/react-svgrepo-com.svg",
+        id: "vscode",
+        name: "VS Code",
+        icon: "/images/technologies/vscode-svgrepo-com.svg",
     },
     {
-        id: "redux",
-        name: "Redux",
-        icon: "/images/technologies/redux-svgrepo-com.svg",
+        id: "arduino",
+        name: "Arduino",
+        icon: "/images/technologies/arduino-svgrepo-com.svg",
     },
     {
-        id: "jest",
-        name: "Jest",
-        icon: "/images/technologies/jest-snapshot-svgrepo-com.svg",
+        id: "bootstrap",
+        name: "Bootstrap",
+        icon: "/images/technologies/bootstrap-svgrepo-com.svg",
+    },
+    {
+        id: "firebase",
+        name: "Firebase",
+        icon: "/images/technologies/firebase-svgrepo-com.svg",
     },
     {
         id: "github",
@@ -51,9 +51,14 @@ export const languages: Language[] = [
         icon: "/images/technologies/github-svgrepo-com.svg",
     },
     {
-        id: "figma",
-        name: "Figma",
-        icon: "/images/technologies/figma-svgrepo-com.svg",
+        id: "go",
+        name: "Golang",
+        icon: "/images/technologies/go-svgrepo-com.svg",
+    },
+    {
+        id: "mysql",
+        name: "MySQL",
+        icon: "/images/technologies/mysql-logo-svgrepo-com.svg",
     },
     {
         id: "tailwindcss",
@@ -61,8 +66,23 @@ export const languages: Language[] = [
         icon: "/images/technologies/tailwind-svgrepo-com.svg",
     },
     {
-        id: "nextjs",
-        name: "Next.js",
-        icon: "/images/technologies/nextjs-svgrepo-com.svg",
+        id: "python",
+        name: "Python",
+        icon: "/images/technologies/python-svgrepo-com.svg",
     },
+    {
+        id: "linux",
+        name: "Linux",
+        icon: "/images/technologies/linux-tux-svgrepo-com.svg",
+    },
+    {
+        id: "docker",
+        name: "Docker",
+        icon: "/images/technologies/docker-svgrepo-com.svg",
+    },
+    {
+        id: "mongodb",
+        name: "Mongo DB",
+        icon: "/images/technologies/mongodb-svgrepo-com.svg",
+    }
 ]

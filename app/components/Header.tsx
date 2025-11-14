@@ -62,7 +62,7 @@ export default function Header() {
                 <div className="absolute top-0 left-0 w-full h-full -z-10 with-lg backdrop-blur-[4px]"></div>
                 <div className="w-full flex items-center justify-between">
                     <Link
-                        href="https://fabiconcept.online"
+                        href="https://withrizky.github.io/officialweb/"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="Go to my main website"
@@ -77,11 +77,11 @@ export default function Header() {
                             "text-base font-medium relative",
                             "after:absolute after:-bottom-0.5 after:h-[1.5px] after:w-3 after:bg-foreground after:left-0",
                             "group-hover:after:w-full after:transition-all after:duration-300 group-hover:after:opacity-50"
-                        )}>Favour Tochukwu Ajokubi</p>
+                        )}>Rizky Reynaldi</p>
                     </Link>
                     <div className="flex items-center gap-5">
                         <Link
-                            href="mailto:fabiconceptdev@gmail.com"
+                            href="withrizky.official@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm group relative"
@@ -97,7 +97,7 @@ export default function Header() {
                                     size={15}
                                     className="text-foreground opacity-100 group-hover:opacity-80"
                                 />
-                                <span className="opacity-80 group-hover:opacity-100 font-medium">fabiconceptdev@gmail.com</span>
+                                <span className="opacity-80 group-hover:opacity-100 font-medium">withrizky.official@gmail.com</span>
                             </p>
                         </Link>
                         <div className="flex items-center gap-2">

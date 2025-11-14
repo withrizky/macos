@@ -1,6 +1,6 @@
 export const metadata = {
-    title: "Favour Ajokubi | Full-Stack Developer & Web3 Explorer",
-    description: "Portfolio of Favour Tochukwu Ajokubi, a Nigerian software developer blending frontend flair with backend power. Passionate about building seamless web experiences and exploring Web3 innovations.",
+    title: "Rizky Reynaldi | IT Profesional",
+    description: "Portfolio of Rizky Reynaldi, a Indonesian software developer blending frontend flair with backend power. Passionate about building seamless web experiences and exploring Web3 innovations.",
     keywords: [
       "Favour Tochukwu Ajokubi",
       "Favour Ajokubi",
@@ -30,9 +30,9 @@ export const metadata = {
       "System 7",
       "Classic Computing"
     ],
-    authors: [{ name: "Favour Tochukwu Ajokubi", url: "https://fabiconcept.online" }],
-    creator: "Favour Tochukwu Ajokubi",
-    publisher: "Favour Tochukwu Ajokubi",
+    authors: [{ name: "Automation Developer • Backend Engineer • IT Consultant", url: "https://withrizky.github.io/officialweb/" }],
+    creator: "Rizky Reynaldi",
+    publisher: "Rizky Reynaldi",
     icons: {
       icon: '/favicons/android-chrome-192x192.png',
       shortcut: '/favicons/android-chrome-512x512.png',
@@ -46,19 +46,19 @@ export const metadata = {
     appleWebApp: {
       capable: true,
       statusBarStyle: "default" as const,
-      title: "Favour Ajokubi Portfolio | Macintosh OS",
+      title: "Rizky Reynaldi Portfolio | Macintosh OS",
     },
     openGraph: {
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
+      title: "Rizky Reynaldi | IT Profesional",
       description: "Crafting seamless digital experiences across frontend, backend, and Web3. Explore projects, contributions, and more.",
-      url: "https://macintosh.fabiconcept.online/",
-      siteName: "Favour Ajokubi Portfolio",
+      url: "https://withrizky.github.io/officialweb/",
+      siteName: "Rizky Reynaldi Portfolio",
       images: [
         {
           url: "https://pickholder.sirv.com/Images/og-image.png", 
           width: 1200,
           height: 630,
-          alt: "Favour Ajokubi Portfolio Preview"
+          alt: "Rizky Reynaldi Portfolio Preview"
         }
       ],
       locale: "en_US",
@@ -66,10 +66,10 @@ export const metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Favour Tochukwu Ajokubi | Full-Stack Developer & Web3 Explorer",
+      title: "Rizky Reynaldi | Full-Stack Developer & Web3 Explorer",
       description: "Building web & mobile apps with purpose. From Cold Hubs to Mono API, Favour crafts tech that makes a difference.",
       creator: "@goat_h2o", 
       images: ["https://pickholder.sirv.com/Images/og-image.png"] 
     },
-    metadataBase: new URL("https://macintosh.fabiconcept.online/")
+    metadataBase: new URL("https://withrizky.github.io/officialweb/")
   };
