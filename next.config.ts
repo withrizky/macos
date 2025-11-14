@@ -39,7 +39,28 @@ const nextConfig: NextConfig = {
         hostname: "withrizky.github.io",
         pathname: "/**",
       },
-      ],
+    ],
+  },
+
+  // -----------------------------------------------------
+  // 🔥 Allow iframe (biar Vercel ga nolak di dalam iframe)
+  // -----------------------------------------------------
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "ALLOWALL",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors *",
+          },
+        ],
+      },
+    ];
   },
 };
 
